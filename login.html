@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+        <h1>HOME</h1>
+  <form action="">
+    <div class="form-group">
+      <label>Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <label>Password:</label>
+      <input type="password" class="form-control" id="passwd" placeholder="Enter password" name="pwd">
+    </br><button type="submit" class="btn btn-success" onclick="login()"> <a href="curd.html">LOGIN</a></button>
+    <a href="registration.html"><button type="button" class="btn btn-success" onclick="registration()" >Registration</button></a>
+    
+</div>
+      
+</form>
+</div>
+
+</body>
+</html>
+<script>
+function login(){
+let email=document.getElementById('email').value;
+let pwrd=document.getElementById('passwd').value;
+//let mail=document.getElementById('email');
+
+if(email===''){
+alert('Please enter The Email')
+
+}
+
+else if(pwrd===''){
+alert('Please enter the password')
+
+} 
+// else if(mail==='user@gmail.com'){
+
+// alert('user start with @gmail.com')
+// }
+
+// else if(pwrd.length<4){
+//     alert('password will be more than 5 letters')
+
+
+// }
+
+else{
+alert('success')
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+</script>

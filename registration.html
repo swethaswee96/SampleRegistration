@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Registration Form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="name" class="form-control" id="first" placeholder="Enter firstname" >
+      <label>Middle Name</label>
+      <input type="name" class="form-control" id="middle" placeholder="Enter middlename" >
+      <label>LastName</label>
+      <input type="name" class="form-control" id="last" placeholder="Enter lastname" >
+      <label>Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" >
+      <label>MobileNumber</label>
+      <input type="number" class="form-control" id="mobile" placeholder="Enter mobilenumber" >
+      <label>Password</label>
+      <input type="Password" class="form-control" id="Password" placeholder="Enter password" >
+      <label>Confirm Password</label>
+      <input type="Password" class="form-control" id="Confirm" placeholder="Enter confirmpassword" ><br>
+      <a href="login.html"><button type="button" class="btn btn-success" onclick="Submit()"> Registration</button></a>
+    </div>  
+</form>
+</div>
+<script>
+function Submit(){
+let a=document.getElementById('first').value;
+let b=document.getElementById('middle').value;
+let c=document.getElementById('last').value;
+let d=document.getElementById('email').value;
+let e=document.getElementById('mobile').value;
+let f=document.getElementById('Password').value;
+let g=document.getElementById('Confirm').value;
+
+ if(firstn===''){
+alert('enter the Firstname')
+
+ }
+else if(middlen===''){
+alert('enter the Middlename')
+
+ }
+  else if(lastn===''){
+alert('enter the Lastname')
+
+ }
+ else if(emailn===''){
+alert('enter the email')
+
+ }
+ else if(mobilen===''){
+alert('enter the mobilenumber')
+
+ }
+ else if(passwrd===''){
+alert('enter the Password')
+
+ }
+ else if(confirmpwd===''){
+alert('enter the Confirmpassword')
+
+ }
+
+ else{
+alert('Success')
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+</script>
+</body>
+</html>
